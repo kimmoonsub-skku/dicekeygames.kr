@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #050505;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.site {
+  width: 100%;
+}
+
+.hero {
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first {
+  background-image: url("assets/first-view.png");
+}
+
+.second {
+  background-image: url("assets/scroll-view.png");
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 62vw;
+    background-size: contain;
+    background-color: #050505;
+  }
+}

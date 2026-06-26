@@ -1,0 +1,7 @@
+Create a static GitHub Pages website for Dicekey Games.
+The website must have two full-screen sections.
+The first section should display the uploaded image `assets/first-view.png` as a full-width first view when the website opens.
+The second section should display the uploaded image `assets/scroll-view.png` as a full-width section when the user scrolls down.
+Use only HTML and CSS. Do not use React or JavaScript.
+Keep the layout simple, dark, and responsive.
+The files should be named `index.html` and `style.css`, and image files should be inside the `assets` folder.
