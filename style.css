@@ -20,23 +20,24 @@ body {
 
 .hero {
   width: 100vw;
-  min-height: 100vh;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .first {
+  min-height: 100vh;
   background-image: url("assets/first-view.png");
 }
 
 .second {
+  min-height: 100vh;
   background-image: url("assets/scroll-view.png");
 }
 
 @media (max-width: 900px) {
   .hero {
-    min-height: 62vw;
+    min-height: 72vw;
     background-size: contain;
     background-color: #050505;
   }

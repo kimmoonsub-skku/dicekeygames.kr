@@ -1,21 +1,13 @@
-# Dicekey Games Website
+# Dicekey Games Website - Fixed Version
 
-GitHub Pages에 올리는 방법:
+수정 사항:
 
-1. 새 GitHub Repository를 만든다.
-2. 이 폴더 안의 `index.html`, `style.css`, `assets` 폴더를 그대로 업로드한다.
-3. Repository에서 **Settings → Pages**로 이동한다.
-4. **Branch: main / root**로 설정하고 저장한다.
-5. 몇 분 뒤 생성된 Pages 주소로 접속한다.
+1. 첫 화면 중앙 제목을 `NEWS`에서 `BOARD GAMES`로 변경했습니다.
+2. 스크롤 후 두 번째 화면에 중복으로 보이던 상단바를 제거했습니다.
+3. 기존 파일을 GitHub 저장소에 그대로 덮어쓰기 업로드하면 됩니다.
 
-구조:
+업로드 방법:
 
-```text
-index.html
-style.css
-assets/
-  first-view.png
-  scroll-view.png
-```
-
-첫 화면은 `first-view.png`, 아래로 스크롤하면 `scroll-view.png`가 보이도록 만든 단순한 정적 사이트입니다.
+- 이 폴더 안의 `index.html`, `style.css`, `assets` 폴더를 기존 저장소에 다시 업로드합니다.
+- 같은 이름의 파일은 Replace / 덮어쓰기 하면 됩니다.
+- Commit changes를 누른 뒤 GitHub Pages 주소를 새로고침합니다.
