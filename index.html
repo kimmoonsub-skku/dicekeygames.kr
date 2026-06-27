@@ -5,81 +5,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dicekey Games</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
-<body class="home-page">
-  <a class="hotspot about-link" href="about.html" aria-label="Go to About Dicekey Games"></a>
-  <a class="hotspot boardgame-link" href="boardgame.html" aria-label="Go to Boardgame"></a>
-  <a class="hotspot mcbd-link" href="mcbd.html" aria-label="Go to MCBD"></a>
-  <a class="hotspot notice-link" href="notice.html" aria-label="Go to Notice"></a>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Dicekey Games Home">
+      <img src="assets/logo.png" alt="Dicekey Games logo" />
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">ABOUT</a>
+      <a href="#boardgame">BOARDGAME</a>
+      <a href="#mcbd">MCBD</a>
+      <a href="#notice">NOTICE</a>
+    </nav>
+    <a class="contact-btn" href="#contact">CONTACT US</a>
+  </header>
 
-  <main class="site">
-    <section class="hero first" aria-label="Dicekey Games board games page"></section>
+  <main id="home">
+    <section id="boardgame" class="hero-section section-dark">
+      <div class="ornament top"></div>
+      <div class="hero-title">
+        <p>DICEKEY COLLECTION</p>
+        <h1>BOARD GAMES</h1>
+        <span>DICEKEY GAMES</span>
+      </div>
 
-    <section class="board-news" aria-label="Board game news section">
-      <div class="news-inner">
-        <p class="eyebrow">DICEKEY GAMES NEWSROOM</p>
-        <h1>BOARD GAME NEWS</h1>
-        <p class="news-lead">Latest updates about expansions, tournaments, partnerships, and indie board game releases.</p>
+      <div class="game-row">
+        <article class="game-card">
+          <img src="assets/game-1.png" alt="Here to Slay: Dungeons" />
+          <h3>Here to Slay:<br>Dungeons</h3>
+        </article>
+        <article class="game-card">
+          <img src="assets/game-2.png" alt="Twisted Cryptids Exclusive Edition" />
+          <h3>Twisted Cryptids<br>(Exclusive Edition)</h3>
+        </article>
+        <article class="game-card">
+          <img src="assets/game-3.png" alt="Point Salad" />
+          <h3>Point Salad</h3>
+        </article>
+        <article class="game-card">
+          <img src="assets/game-4.png" alt="Point Galaxy" />
+          <h3>Point Galaxy</h3>
+        </article>
+        <article class="game-card">
+          <img src="assets/game-5.png" alt="Propolis" />
+          <h3>Propolis</h3>
+        </article>
+        <article class="game-card">
+          <img src="assets/game-6.png" alt="Fall of Nephisto" />
+          <h3>Fall of Nephisto</h3>
+        </article>
+      </div>
 
-        <div class="news-grid-large">
-          <article class="feature-news">
-            <img src="assets/game-1.png" alt="Here to Slay Dungeons box" />
-            <div>
-              <span class="tag expansion">EXPANSION</span>
-              <h2>Here to Slay: Dungeons Expansion Preview</h2>
-              <p>A new dungeon-focused expansion is being prepared for Dicekey Games' fantasy lineup, adding more bosses, party choices, and tactical routes.</p>
-              <time>2024.05.24</time>
-            </div>
-          </article>
+      <div class="side-dots" aria-hidden="true">
+        <span class="active"></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <a class="scroll-hint" href="#notice" aria-label="Scroll to news">⌄</a>
+    </section>
 
-          <article class="feature-news dark-card">
-            <span class="tag tournament">TOURNAMENT</span>
-            <h2>Point Salad Mini League Results</h2>
-            <p>Local players competed in a fast-paced Point Salad event. Dicekey Games will continue supporting small community tournaments.</p>
-            <time>2024.05.21</time>
-          </article>
-        </div>
+    <section id="notice" class="news-section">
+      <div class="section-heading wide-heading">
+        <p>DICEKEY GAMES NEWSROOM</p>
+        <h2>BOARD GAME NEWS</h2>
+        <span>Latest updates about releases, tournaments, pop-up stores, and localization news.</span>
+      </div>
 
-        <div class="news-cards">
-          <article>
-            <img src="assets/game-2.png" alt="Twisted Cryptids box" />
-            <div>
-              <span class="tag release">NEW RELEASE</span>
-              <h3>Twisted Cryptids Korean Edition Signed</h3>
-              <p>Exclusive distribution discussions have been completed for a mysterious indie title.</p>
-              <time>2024.05.18</time>
-            </div>
-          </article>
-          <article>
-            <img src="assets/game-5.png" alt="Propolis box" />
-            <div>
-              <span class="tag partnership">PARTNERSHIP</span>
-              <h3>Board Game Cafe Demo Week</h3>
-              <p>Dicekey Games will run demo events with partner board game cafés.</p>
-              <time>2024.05.15</time>
-            </div>
-          </article>
-          <article>
-            <img src="assets/game-4.png" alt="Point Galaxy box" />
-            <div>
-              <span class="tag localization">LOCALIZATION</span>
-              <h3>Point Galaxy Localization Started</h3>
-              <p>Rulebook translation and component review are now in progress.</p>
-              <time>2024.05.12</time>
-            </div>
-          </article>
-          <article>
-            <img src="assets/game-6.png" alt="Fall of Nephisto box" />
-            <div>
-              <span class="tag crowdfunding">CROWDFUNDING</span>
-              <h3>Fall of Nephisto Funding Teaser</h3>
-              <p>A limited fantasy title is being prepared for a community-first campaign.</p>
-              <time>2024.05.10</time>
-            </div>
-          </article>
-        </div>
+      <div class="news-grid">
+        <article class="news-card large">
+          <img src="assets/news-1.png" alt="Baseball collectible card news" />
+          <div class="news-body">
+            <div class="news-meta"><b>NEW RELEASE</b><span>2026.06.24</span></div>
+            <h3>Collectible Card Season 2 Special Pack Announced</h3>
+            <p>Dicekey selects highly collectible products and introduces limited-edition releases for Korean hobby gamers.</p>
+          </div>
+        </article>
+
+        <article class="news-card large">
+          <img src="assets/news-2.png" alt="Board game summer festival news" />
+          <div class="news-body">
+            <div class="news-meta"><b>EVENT</b><span>2026.06.22</span></div>
+            <h3>Summer Board Game Festival Booth Planned</h3>
+            <p>We connect indie games, offline experience, and community events through pop-up style promotion.</p>
+          </div>
+        </article>
+
+        <article class="news-card large">
+          <img src="assets/news-3.png" alt="Character collection card news" />
+          <div class="news-body">
+            <div class="news-meta"><b>PARTNERSHIP</b><span>2026.06.22</span></div>
+            <h3>Character Card Collaboration Launch</h3>
+            <p>Partnership products expand brand visibility and help Dicekey build new gamer communities.</p>
+          </div>
+        </article>
+
+        <article class="news-card large">
+          <img src="assets/news-4.png" alt="Board game release schedule" />
+          <div class="news-body">
+            <div class="news-meta"><b>RELEASE</b><span>2026.06.15</span></div>
+            <h3>Six New Titles Scheduled for June Release</h3>
+            <p>From compact family games to strategic indie titles, Dicekey curates games with strong visual identity.</p>
+          </div>
+        </article>
+
+        <article class="news-card large">
+          <img src="assets/news-5.png" alt="Speed cube championship news" />
+          <div class="news-body">
+            <div class="news-meta"><b>TOURNAMENT</b><span>2026.06.05</span></div>
+            <h3>Community Tournament Program Expanded</h3>
+            <p>Offline tournaments and challenge events help increase repeat visits and customer loyalty.</p>
+          </div>
+        </article>
+
+        <article class="news-card large">
+          <img src="assets/news-6.png" alt="Board game preorder news" />
+          <div class="news-body">
+            <div class="news-meta"><b>PRE-ORDER</b><span>2026.06.05</span></div>
+            <h3>Modern Crime Board Game Pre-order Notice</h3>
+            <p>Pre-order campaigns allow us to test demand before production and reduce inventory risk.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section section-dark">
+      <div class="section-heading">
+        <p>ABOUT DICEKEY GAMES</p>
+        <h2>Unlocking Hidden Indie Board Games</h2>
+        <span>Dicekey Games is a board game publisher, exclusive distributor, and original game studio.</span>
+      </div>
+      <div class="feature-grid">
+        <article><b>01</b><h3>Exclusive Distribution</h3><p>We bring promising overseas indie board games to the Korean market.</p></article>
+        <article><b>02</b><h3>Localization & Publishing</h3><p>We translate, redesign, and publish games for Korean players.</p></article>
+        <article><b>03</b><h3>Crowdfunding First</h3><p>We test demand and secure capital before mass production.</p></article>
+        <article><b>04</b><h3>Original IP Growth</h3><p>Profits from distribution are reinvested into Dicekey's own games.</p></article>
+      </div>
+    </section>
+
+    <section id="mcbd" class="process-section">
+      <div class="section-heading">
+        <p>MCBD STRATEGY</p>
+        <h2>Market · Community · Brand · Development</h2>
+        <span>Our growth model connects curated products with loyal communities.</span>
+      </div>
+      <div class="process-line">
+        <div><strong>01</strong><h3>License</h3><p>Sign indie titles with strong overseas potential.</p></div>
+        <div><strong>02</strong><h3>Crowdfund</h3><p>Validate demand and fund production safely.</p></div>
+        <div><strong>03</strong><h3>Publish</h3><p>Localize, package, and distribute online first.</p></div>
+        <div><strong>04</strong><h3>Develop</h3><p>Invest margins into original Dicekey IP.</p></div>
       </div>
     </section>
   </main>
+
+  <footer id="contact" class="site-footer">
+    <div>
+      <h2>Dicekey Games</h2>
+      <p>Discover hidden gems. Share new experiences.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#about">ABOUT</a>
+      <a href="#boardgame">BOARDGAME</a>
+      <a href="#notice">NOTICE</a>
+      <a href="mailto:contact@dicekeygames.kr">CONTACT</a>
+    </div>
+    <small>© DICEKEY GAMES. ALL RIGHTS RESERVED.</small>
+  </footer>
 </body>
 </html>

@@ -1,15 +1,15 @@
-# Dicekey Games Website
+# Dicekey Games Website v1.0
 
-Upload all files in this folder to the root of your GitHub repository.
+GitHub Pages upload guide:
 
-Included pages:
+1. Upload all files in this folder to your repository.
+2. GitHub → Settings → Pages.
+3. Source: Deploy from a branch.
+4. Branch: main / root.
+5. Save and wait 1-2 minutes.
+
+Main files:
 - index.html
-- about.html
-- boardgame.html
-- mcbd.html
-- notice.html
 - style.css
+- script.js
 - assets/
-
-GitHub Pages setting:
-Settings → Pages → Deploy from a branch → main → /(root) → Save
